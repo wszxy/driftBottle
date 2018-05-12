@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/driftBottle.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
+
+        <script type="text/javascript" src="js/nebPay.js"></script>
+        <script type="text/javascript" src="js/driftBottle.js"></script>
+
+        <title>漂流瓶</title>
+    </head>
+    
+    <body>
+        <div id="login">
+            <h2 style="text-align: center;">欢迎来到漂流瓶的世界!</h2>
+            <input type="" name="" class="loginInfo" id="loginName" placeholder="请输入你的名字"></input>
+            <input type="number" class="loginInfo" name="" id="loginAge" placeholder="请输入你的年龄"></input>
+            <input type="" name="" class="loginInfo" id="loginCity" placeholder="请输入你的城市"></input>
+            <button id="submit">提交</button>
+        </div>
+    	<div id="mainFrame">
+    		<div id="bottle_pannel">
+    			<div id="bottle_pannel_head">
+    				<div id="title">
+    					<h2>收到的瓶子</h2>
+    				</div>
+
+    				<button id="close_pannel_btn">
+    				</button>
+                    
+                    <button id="allMessages" class = "historyBtn">收到的消息</button>
+                    <button id="allBottles" class="historyBtn">扔出的瓶子</button>
+    			</div>
+                <div id="content">
+                    <div id="text">
+                    </div>
+                    <textarea id="reply" placeholder="回复TA..."></textarea>
+                    <button id="throwBack" style="margin-left: 370px;margin-top: 5px;margin-right: 10px;background-color: #AD7D29;color: white; border-radius: 5px; height: 30px;">扔回海里</button>
+                    <button id = "replyButton" style="margin-left: 10px margin-top: 5px;background-color: #3492CC;color: white;border-radius: 5px;height: 30px;">回复</button>
+                </div>
+                <div id="textArea">
+                    <textarea id = "userText"></textarea>
+                    <button id = "textArea_throw_btn">扔出去</button>
+                    <button id = "textArea_close_btn">关闭</button>
+                </div>
+                <div id = "tableArea">
+                    <dl id="history" style="list-style-type: none;">
+                    </dl>
+                </div>
+            </div>
+
+
+    		<div id="toolbar" class="bottle_toolbar">
+    			<button class="icon btnThrow" disabled="disabled"></button>
+    			<button class="icon btnGet" disabled="disabled"></button>
+   				<button class="icon myBtn" disabled="disabled"></button>
+   			</div>
+            <div id ="throwedBtn"></div>
+            <div id="salvage">
+                <div id="bottleLogo"></div>
+            </div>
+            <div id="sea"></div>
+    	</div>
+    </body>
+</html>
